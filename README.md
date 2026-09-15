@@ -182,6 +182,72 @@ and
 Year | Country | Event Sentence
 ```
 
+Duplicate entries are removed before exporting the processed data.
+
+This creates cleaner datasets that can be used for further analysis, visualization, or timeline generation.
+
+---
+
+### 7. Event Summarization
+
+Historical passages can contain significant amounts of contextual information, making them difficult to display directly in a concise timeline.
+
+To address this, the project explores summarization techniques including:
+- TextRank
+- GPT-3.5
+
+These techniques are used to condense larger event descriptions into shorter, more interpretable summaries.
+
+The summarized output can be represented as:
+
+```text
+Original Historical Passage
+        ↓
+Event Extraction
+        ↓
+Summarization
+        ↓
+Concise Event Title + Summary
+```
+
+This makes the final timeline easier to read and analyze.
+
+---
+
+### 8. End-to-End NLP Pipeline
+
+The complete processing workflow can be summarized as:
+
+```text
+Historical PDF Documents
+        ↓
+PDF Text Extraction
+        ↓
+Text Cleaning & Normalization
+        ↓
+Coreference Resolution
+        ↓
+Stop-word Removal
+        ↓
+Lemmatization
+        ↓
+Temporal Extraction
+        ↓
+Named Entity Recognition
+   ├── People
+   └── Countries / Locations
+        ↓
+Entity + Event Association
+        ↓
+Structured Data Generation
+        ↓
+Event Summarization
+        ↓
+Chronological Historical Timeline
+```
+
+The pipeline demonstrates how multiple NLP techniques can be combined to transform large collections of unstructured historical text into structured, timeline-ready information.
+
 #### Contributers:
 - Ayushi Amin <i>(ayushima@usc.edu)</i>
 - Tanisha Rathi <i>(trathi@usc.edu)</i>
