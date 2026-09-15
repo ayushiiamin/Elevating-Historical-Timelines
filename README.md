@@ -114,9 +114,32 @@ This allows historical events to be organized chronologically for timeline gener
 
 ---
 
-### 4. Temporal Event Extraction
+### 4. Named Entity Recognition
 
-### Contributers:
+The project uses <b>spaCy Named Entity Recognition (NER)</b> to identify important entities within historical text.
+
+The primary entity categories include:
+- ```PERSON``` — historical figures and individuals
+- ```GPE``` — countries, cities, and geopolitical locations
+
+For example:
+
+```text
+In 1940, Winston Churchill became Prime Minister of the United Kingdom.
+```
+
+The pipeline can extract:
+
+```text
+PERSON: Winston Churchill
+GPE: United Kingdom
+YEAR: 1940
+```
+
+These entities are then linked with their corresponding event sentences.
+
+
+#### Contributers:
 - Ayushi Amin <i>(ayushima@usc.edu)</i>
 - Tanisha Rathi <i>(trathi@usc.edu)</i>
 - Oishi Saha <i>(osaha@usc.edu)</i>
