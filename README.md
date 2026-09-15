@@ -1,13 +1,58 @@
 # Enhancing Event Timelines through the Integration of Coreference Resolution, Single Mention Detection and NER : A Case Study of World War II
 
-## Abstract
-Our project tackles the challenge of analyzing and organizing a vast amount of unstructured text data related to World War II in a temporal manner. Traditional data processing techniques are not efficient in handling such large amounts of data, and manual analysis is not feasible due to the immense size of the dataset. 
+An end-to-end Natural Language Processing pipeline for transforming large collections of unstructured historical text into structured, chronological event timelines.
 
-To overcome these challenges, we use natural language processing (NLP) techniques, specifically coreference resolution, word embeddings, and single-mention detection. By implementing these techniques, we identify and link related events, people, and places mentioned in the texts and arrange them chronologically to create a comprehensive timeline of events during the war. 
+This project analyzes World War II-related documents using **coreference resolution, Named Entity Recognition (NER), temporal extraction, text preprocessing, and summarization techniques** to identify important people, countries, dates, and events and organize them into interpretable historical timelines.
 
-This approach provides valuable insights into the history of the war and its impact over time, leading to discoveries and a deeper understanding of the events. Moreover, the methodology can be applied to other historical and non-historical domains, providing a framework for analyzing historical events and trends in a systematic and comprehensive manner using NLP techniques. 
+## Project Overview
 
-Overall, our project leverages NLP to solve the challenge of analyzing unstructured text data related to World War II and contributes to historical research in a significant way. By providing a more efficient and comprehensive approach, we revolutionize historical research and analysis, ultimately leading to a better understanding of the past and its impact on the present.
+Historical documents contain large volumes of unstructured text, making it difficult to systematically identify relationships between people, locations, dates, and events.
+
+This project builds an NLP workflow that converts raw historical documents into structured timeline-ready data.
+
+The pipeline:
+
+- extracts and preprocesses text from historical PDF documents
+- resolves entity references using **coreference resolution**
+- identifies **people, countries, and temporal information** using NER
+- organizes extracted information chronologically by year
+- generates structured event-level representations
+- creates concise historical event summaries for downstream timeline analysis
+
+## Key Highlights
+
+- Processed **6,488 historical articles/documents**
+- Extracted **20,436+ paragraphs** related to historical years, people, countries, and events
+- Applied **coreference resolution and Named Entity Recognition** to improve entity consistency and event extraction
+- Used **TextRank and GPT-3.5** to generate and analyze **150 concise historical event titles and summaries**
+- Built structured datasets linking **years, people, countries, and historical events**
+- Developed the project collaboratively as part of a **5-person team**
+
+## NLP Pipeline
+
+```text
+Historical PDF Documents
+        ↓
+Text Extraction
+        ↓
+Text Cleaning & Normalization
+        ↓
+Coreference Resolution
+        ↓
+Stop-word Removal & Lemmatization
+        ↓
+Temporal Extraction
+        ↓
+Named Entity Recognition
+   ├── People
+   └── Countries / Locations
+        ↓
+Structured Event Data
+        ↓
+Event Summarization
+        ↓
+Chronological Historical Timeline
+```
 
 ### Contributers:
 - Ayushi Amin <i>(ayushima@usc.edu)</i>
