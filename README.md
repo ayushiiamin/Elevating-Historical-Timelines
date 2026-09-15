@@ -138,6 +138,49 @@ YEAR: 1940
 
 These entities are then linked with their corresponding event sentences.
 
+---
+
+### 5. Entity-Based Timeline Construction
+
+Extracted entities are grouped according to their associated year.
+
+This creates structured relationships between:
+
+```text
+Year
+ ├── People
+ ├── Countries
+ └── Event Sentences
+```
+
+For example:
+
+```text
+1940
+ ├── Person: Winston Churchill
+ ├── Country: United Kingdom
+ └── Event: Winston Churchill became Prime Minister.
+```
+
+This structure enables chronological exploration of people, countries, and historical events.
+
+---
+
+### 6. Structured Data Generation
+
+The extracted information is transformed into structured datasets using pandas.
+
+Two primary representations are generated:
+
+```text
+Year | Person | Event Sentence
+```
+
+and
+
+```text
+Year | Country | Event Sentence
+```
 
 #### Contributers:
 - Ayushi Amin <i>(ayushima@usc.edu)</i>
