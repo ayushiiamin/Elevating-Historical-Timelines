@@ -331,7 +331,7 @@ The resulting pipeline supports:
 This approach reduces the need for fully manual historical document analysis and provides a scalable framework for exploring large text collections.
 
 
-#### Contributers:
+## Contributers:
 Developed as a team project at the University of Southern California.
 - Ayushi Amin
 - Tanisha Rathi
