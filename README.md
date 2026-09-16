@@ -248,9 +248,93 @@ Chronological Historical Timeline
 
 The pipeline demonstrates how multiple NLP techniques can be combined to transform large collections of unstructured historical text into structured, timeline-ready information.
 
+## Tech Stack
+
+### Programming Language
+- Python
+### NLP & Machine Learning
+- spaCy
+- NLTK
+- NeuralCoref
+- TextRank
+- GPT-3.5
+### Data Processing
+- pandas
+- Regular Expressions
+- PyPDF2
+- PyMuPDF
+### Development Environment
+- Jupyter Notebook
+- Google Colab
+
+## Repository Structure
+
+```text
+Elevating-Historical-Timelines/
+│
+├── Data/
+│   └── Project datasets and processed outputs
+│
+├── group_30.ipynb
+│   └── Main experimentation and NLP pipeline notebook
+│
+├── group_30.py
+│   └── Python implementation of the NLP workflow
+│
+└── README.md
+    └── Project documentation
+```
+
+## Example Workflow
+
+A simplified example of the pipeline looks like this:
+
+### Raw Input
+```text
+In 1940, Winston Churchill became Prime Minister of the United Kingdom.
+He played a major role in Britain's wartime leadership.
+```
+### Coreference Resolution
+```text
+In 1940, Winston Churchill became Prime Minister of the United Kingdom.
+Winston Churchill played a major role in Britain's wartime leadership.
+```
+### Temporal Extraction
+```text
+Year: 1940
+```
+### Named Entity Recognition
+```text
+PERSON: Winston Churchill
+GPE: United Kingdom
+```
+### Structured Output
+```text
+Year: 1940
+Person: Winston Churchill
+Country: United Kingdom
+Event: Winston Churchill became Prime Minister and played a major role in Britain's wartime leadership.
+```
+
+## Results
+
+The project demonstrates how a combination of NLP techniques can transform large-scale historical text into structured, timeline-ready information.
+
+The resulting pipeline supports:
+- historical event extraction
+- chronological organization
+- person and country identification
+- entity relationship analysis
+- timeline generation
+- concise event summarization
+
+This approach reduces the need for fully manual historical document analysis and provides a scalable framework for exploring large text collections.
+
+
 #### Contributers:
-- Ayushi Amin <i>(ayushima@usc.edu)</i>
-- Tanisha Rathi <i>(trathi@usc.edu)</i>
-- Oishi Saha <i>(osaha@usc.edu)</i>
-- Chahita Verma <i>(cverma@usc.edu)</i>
-- Manorama Patil <i>(manorama@usc.edu)</i>
+Developed as a team project at the University of Southern California.
+- Ayushi Amin
+- Tanisha Rathi
+- Oishi Saha
+- Chahita Verma
+- Manorama Patil
